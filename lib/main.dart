@@ -1,3 +1,5 @@
+import 'package:bloodnate_website/pages/homepage.dart';
+import 'package:bloodnate_website/theme_colors.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +14,12 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: black,
         primaryColor: Colors.black,
-        canvasColor: Colors.black
+        canvasColor: Colors.black,
+
       ),
-      home: const Placeholder(),
+      home: const HomePage(),
     );
   }
 }
