@@ -10,6 +10,18 @@ AppBar appBar({required String title}){
   );
 }
 
+bool isMobile(BuildContext context){
+  return MediaQuery.of(context).size.width < 480;
+}
+
+bool isTablet(BuildContext context){
+  return MediaQuery.of(context).size.width < 800;
+}
+
+bool isDesktop(BuildContext context){
+  return MediaQuery.of(context).size.width > 800;
+}
+
 String desc = 'Bloodnate is an idea of digitalising all blood banks of india, bloodnate would act as an interface between all the blood centers and blood banks to make blood donation and blood searching easy, quick and on finger tips';
 
 String intro = 'Bloodnate is a mobile application designed to help people find required blood components from blood banks. The app provides a convenient way for users to check the availability of blood components, such as whole blood, platelets, plasma, and other blood products, through their smartphones';
