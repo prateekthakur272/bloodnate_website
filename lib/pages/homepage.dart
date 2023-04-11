@@ -1,3 +1,4 @@
+import 'package:bloodnate_website/components/home_header.dart';
 import 'package:bloodnate_website/constants_and_methods.dart';
 import 'package:bloodnate_website/widgets/info_card.dart';
 import 'package:bloodnate_website/widgets/intro_card.dart';
@@ -14,27 +15,8 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.all(24),
         child: Column(
           children: [
-            const Text('Bloodnate',style: TextStyle(fontSize: 44,fontWeight: FontWeight.bold,color: Colors.white)),
-            //const Text("India's digital blood bank",style: TextStyle(fontSize: 24,color: Colors.white)),
-            Text(desc,style: const TextStyle(fontSize: 18,color: Colors.white),textAlign: TextAlign.center,),
-            const SizedBox(height: 32),
-            Container(
-              decoration: const BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(12)),
-                color: Colors.white
-              ),
-              padding: const EdgeInsets.all(24),
-              width: double.infinity,
-              child: Column(
-                children: [
-                  Image.asset('assets/img_bloodnate.png',height: 240,),
-                  //const Text('Bloodnate',style: TextStyle(fontSize: 44,fontWeight: FontWeight.bold)),
-                  Text(tagLine,style: const TextStyle(fontSize: 24,)),
-                  const Text('Coming Soon...',style: TextStyle(fontSize: 44,fontWeight: FontWeight.bold,)),
-                ],
-              ),
-            ),
-            const SizedBox(height: 32),
+            const HomeHeader(),
+            const SizedBox(height: 64),
             Row(
               children: [
                 const Expanded(
