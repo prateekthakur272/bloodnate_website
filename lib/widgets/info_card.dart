@@ -1,4 +1,3 @@
-import 'package:bloodnate_website/constants_and_methods.dart';
 import 'package:flutter/material.dart';
 
 class InfoCard extends StatelessWidget {
@@ -30,6 +29,5 @@ class InfoCard extends StatelessWidget {
         ],
       ),
     );
-    ;
   }
 }
