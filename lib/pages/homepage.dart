@@ -1,3 +1,4 @@
+import 'package:bloodnate_website/components/banner.dart';
 import 'package:bloodnate_website/components/home_header.dart';
 import 'package:bloodnate_website/constants_and_methods.dart';
 import 'package:bloodnate_website/widgets/info_card.dart';
@@ -12,11 +13,13 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: appBar(title: 'Bloodnate'),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(24),
+        //padding: const EdgeInsets.all(24),
         child: Column(
           children: [
             const HomeHeader(),
-            const SizedBox(height: 64),
+            const SizedBox(height:24),
+            const ImageBanner(),
+            const SizedBox(height: 24),
             Row(
               children: [
                 const Expanded(
