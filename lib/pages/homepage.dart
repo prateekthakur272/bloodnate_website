@@ -11,17 +11,15 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(title: 'Bloodnate'),
-      body: SingleChildScrollView(
-        child: Column(
-          children: const [
-            HomeHeader(),
-            SizedBox(height:48),
-            ImageBanner(),
-            SizedBox(height: 48),
-            AboutApp()
-          ],
-        ),
-      ),
+      body: ListView(
+        children: const [
+          HomeHeader(),
+          SizedBox(height:48),
+          ImageBanner(),
+          SizedBox(height: 48),
+          AboutApp(),
+        ],
+      )
     );
   }
 }
