@@ -9,10 +9,10 @@ class InfoCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(24),
-      decoration: BoxDecoration(
-        borderRadius: const BorderRadius.all(Radius.circular(16)),
-        border: Border.all(color: Colors.white),
-      ),
+      // decoration: BoxDecoration(
+      //   borderRadius: const BorderRadius.all(Radius.circular(16)),
+      //   border: Border.all(color: Colors.white),
+      // ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
