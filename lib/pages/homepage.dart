@@ -12,12 +12,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: appBar(title: 'Bloodnate'),
       body: ListView(
-        children: const [
-          HomeHeader(),
-          SizedBox(height:48),
-          ImageBanner(),
-          SizedBox(height: 48),
-          AboutApp(),
+        children:[
+          const HomeHeader(),
+          if(isDesktop(context))
+          const ImageBanner(),
+          const AboutApp(),
         ],
       )
     );
