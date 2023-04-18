@@ -1,5 +1,6 @@
 import 'package:bloodnate_website/constants_and_methods.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({super.key});
@@ -140,7 +141,12 @@ class Content extends StatelessWidget {
           height: 24,
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: () async {
+            final url = Uri.parse('https://contact.prateekthakur.dev');
+            if(await canLaunchUrl(url)){
+              launchUrl(url);
+            }
+          },
           style: TextButton.styleFrom(
             padding: const EdgeInsets.symmetric(
                 vertical: 20, horizontal: 32),
